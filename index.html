@@ -8,6 +8,104 @@
    <link rel="stylesheet" href="./main.css">
    <title>Razorpay_Cloned</title>
    <style>
+      @tailwind base;
+      @tailwind components;
+
+      .div_border {
+         @apply w-7 h-1 bg-green-500 my-5;
+      }
+
+      .bold_text {
+         @apply font-extrabold text-lg;
+         font-size: 25px;
+      }
+
+      .flex-prop {
+         display: flex;
+         flex-direction: column;
+         @apply gap-4
+      }
+
+      @tailwind utilities;
+
+      .slider {
+         animation: move 15s infinite linear;
+      }
+
+      @keyframes move {
+         0% {
+            top: 0;
+         }
+
+         100% {
+            top: -165%;
+         }
+      }
+
+      .names {
+         @apply font-extrabold text-2xl
+      }
+
+      .role {}
+
+      .company_img {
+         width: 180px;
+      }
+
+      .image {
+         max-width: 320px;
+         max-height: 320px;
+
+      }
+
+      .span2 {
+         @apply text-3xl font-light
+      }
+
+      .span1 {
+         @apply text-3xl font-light
+      }
+
+      .two, .three, .four, .five, .six, .seven {
+         @apply bg-gray-500
+      }
+
+      .one {
+         @apply bg-blue-500
+      }
+
+      a {
+         color: rgb(2, 123, 253);
+      }
+
+      a:hover {
+         color: rgb(7, 76, 99);
+         transition: all 1s;
+      }
+
+      .ResOp {
+         z-index: 0;
+         transition: all ease 0.5s;
+         width: 0;
+      }
+
+      .active {
+         transform: scaleX(1);
+         width: 100vw;
+         z-index: 50;
+
+      }
+
+      .RotateMenu {
+         transition: all ease 0.2s;
+         transform: rotate(-180deg);
+      }
+
+      .RotateMenu1 {
+         transition: all ease 0.8s;
+         transform: rotate(360deg);
+      }
+
       .coreftr {
          background-size: 100% 100%;
       }
@@ -84,13 +182,13 @@
             <p>Payment Gateway</p>
          </div>
          <div class="flex gap-7">
-            <img src="Payments_Nav_Ic/payment-links.a69f2346.svg"
-               class="w-[25px] h-[25px] rounded-full bg-blue-400" alt="">
+            <img src="Payments_Nav_Ic/payment-links.a69f2346.svg" class="w-[25px] h-[25px] rounded-full bg-blue-400"
+               alt="">
             <p>Payment Links</p>
          </div>
          <div class="flex gap-7">
-            <img src="Payments_Nav_Ic/payment-buttons.74fc1e0f.svg"
-               class="w-[25px] h-[25px] rounded-full bg-blue-400" alt="">
+            <img src="Payments_Nav_Ic/payment-buttons.74fc1e0f.svg" class="w-[25px] h-[25px] rounded-full bg-blue-400"
+               alt="">
             <p>Payment-button</p>
          </div>
       </div>
@@ -103,8 +201,8 @@
             <p>Current Accounts</p>
          </div>
          <div class="flex gap-7">
-            <img src="Payments_Nav_Ic/pos-regular.b683b9f8.svg"
-               class="w-[25px] h-[25px] rounded-full bg-blue-400" alt="">
+            <img src="Payments_Nav_Ic/pos-regular.b683b9f8.svg" class="w-[25px] h-[25px] rounded-full bg-blue-400"
+               alt="">
             <p>Vendor Payments</p>
          </div>
       </div>
